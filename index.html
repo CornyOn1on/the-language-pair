@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>The Language Pair — уроки английского и китайского языка</title>
+  <meta name="description" content="Индивидуальные уроки английского и китайского языка от двух преподавателей. Расскажите о своей цели — подберём программу и удобное время. Запись через Telegram или форму на сайте.">
+
+  <!-- Иконка сайта -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Open Graph: так ссылка выглядит в мессенджерах и соцсетях -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cornyon1on.github.io/the-language-pair/">
+  <meta property="og:site_name" content="The Language Pair">
+  <meta property="og:title" content="The Language Pair — уроки английского и китайского языка">
+  <meta property="og:description" content="Два преподавателя, два языка — одна простая запись. Индивидуальные занятия онлайн.">
+  <meta property="og:image" content="https://cornyon1on.github.io/the-language-pair/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#FAF6EF">
+  <link rel="canonical" href="https://cornyon1on.github.io/the-language-pair/">
+
+  <!-- Шрифты Google Fonts: Playfair Display (заголовки) + Manrope (текст) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <!-- ================= ШАПКА ================= -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="The Language Pair — на главную">
+        <span class="logo__mark" aria-hidden="true"></span>
+        <span class="logo__text">The Language Pair</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основное меню">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#directions">Направления</a></li>
+          <li><a class="nav__link" href="#teachers">Преподаватели</a></li>
+          <li><a class="nav__link" href="#how">Занятия</a></li>
+          <li><a class="nav__link" href="#faq">Вопросы</a></li>
+        </ul>
+        <a class="btn btn--primary nav__cta" href="#zapis">Записаться</a>
+      </nav>
+
+      <button class="burger" id="burger" type="button"
+              aria-expanded="false" aria-controls="nav" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= ПЕРВЫЙ ЭКРАН ================= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+
+        <div class="hero__content">
+          <p class="hero__eyebrow">Языковая студия The Language Pair</p>
+          <h1 class="hero__title" id="hero-title">
+            Два преподавателя, два&nbsp;языка — <span class="hl">одна простая запись</span>
+          </h1>
+          <p class="hero__lead">
+            Индивидуальные уроки английского и китайского языка.
+            Расскажите о своей цели — подберём программу и удобное время.
+          </p>
+
+          <div class="hero__directions">
+            <a class="dir-chip dir-chip--en" href="#directions">
+              <span class="dir-chip__dot" aria-hidden="true"></span>
+              Английский язык
+            </a>
+            <a class="dir-chip dir-chip--zh" href="#directions">
+              <span class="dir-chip__dot" aria-hidden="true"></span>
+              Китайский язык
+            </a>
+          </div>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#zapis">Записаться на занятие</a>
+            <a class="btn btn--ghost btn--lg" href="#teachers">Наши преподаватели</a>
+          </div>
+
+          <p class="hero__bonus">
+            <strong>Первое занятие — бесплатно:</strong> знакомство
+            и определение уровня (30–40 минут).
+            <!-- TODO: подтвердите, что бесплатное первое занятие
+                 действует и на китайском направлении -->
+          </p>
+        </div>
+
+        <div class="hero__photos" aria-hidden="false">
+          <!-- TODO: если замените фото, поправьте width/height под новый файл -->
+          <img class="hero__photo hero__photo--en"
+               src="assets/images/teacher-english-cutout.webp"
+               alt="Ева — преподаватель английского языка"
+               width="943" height="1400" fetchpriority="high">
+          <img class="hero__photo hero__photo--zh"
+               src="assets/images/teacher-chinese-cutout.webp"
+               alt="Екатерина — преподаватель китайского языка"
+               width="716" height="1400" loading="lazy">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= НАПРАВЛЕНИЯ ================= -->
+    <section class="section" id="directions" aria-labelledby="directions-title">
+      <div class="container">
+        <h2 class="section__title" id="directions-title">Два направления</h2>
+        <p class="section__lead">
+          Выберите язык — карточка расскажет, что входит в занятия.
+        </p>
+
+        <div class="cards-2">
+
+          <article class="dir-card dir-card--en reveal">
+            <p class="dir-card__tag">Направление 01</p>
+            <h3 class="dir-card__title">Английский язык</h3>
+            <p class="dir-card__text">
+              Индивидуальные занятия онлайн на платформе Zoom.
+              Длительность занятия — 60 или 90 минут.
+            </p>
+            <!-- TODO: дополните список, когда появятся другие услуги -->
+            <ul class="dir-card__list">
+              <li>начать говорить на английском с нуля;</li>
+              <li>разобраться с грамматикой;</li>
+              <li>понять мемы и освоить «juicy» лексику;</li>
+              <li>подготовиться к разговору с носителями.</li>
+            </ul>
+            <a class="btn btn--en" href="#zapis" data-lang="en">Записаться на английский</a>
+          </article>
+
+          <article class="dir-card dir-card--zh reveal">
+            <p class="dir-card__tag">Направление 02</p>
+            <h3 class="dir-card__title">Китайский язык</h3>
+            <p class="dir-card__text">
+              Китайский язык с нуля и начального уровня —
+              детям от 7 лет, подросткам и взрослым.
+            </p>
+            <!-- TODO: дополните список, когда появятся другие услуги -->
+            <ul class="dir-card__list">
+              <li>начинаем говорить и понимать язык с первых занятий;</li>
+              <li>интерактивные материалы: презентации, игры, мультфильмы и видео;</li>
+              <li>учим язык без страха — как интересное приключение.</li>
+            </ul>
+            <a class="btn btn--zh" href="#zapis" data-lang="zh">Записаться на китайский</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ПРЕПОДАВАТЕЛИ ================= -->
+    <section class="section section--alt" id="teachers" aria-labelledby="teachers-title">
+      <div class="container">
+        <h2 class="section__title" id="teachers-title">Преподаватели</h2>
+        <p class="section__lead">
+          Нас двое — и мы ведём общий аккаунт, чтобы записаться было просто.
+        </p>
+
+        <div class="cards-2">
+
+          <article class="teacher teacher--en reveal">
+            <img class="teacher__photo"
+                 src="assets/images/teacher-english-card.webp"
+                 alt="Ева, преподаватель английского языка"
+                 width="456" height="958" loading="lazy">
+            <div class="teacher__body">
+              <h3 class="teacher__name">
+                Ева <span class="teacher__alt-name" lang="en">Eva</span>
+              </h3>
+              <p class="teacher__lang teacher__lang--en">Английский язык</p>
+
+              <dl class="teacher__facts">
+                <div>
+                  <dt>О себе</dt>
+                  <dd>
+                    Помогаю начать говорить на английском языке.
+                    На занятиях использую современные и эффективные
+                    методы обучения.
+                  </dd>
+                </div>
+                <div>
+                  <dt>Опыт</dt>
+                  <dd>Более 5 лет преподавания.</dd>
+                </div>
+                <div>
+                  <dt>Образование и сертификаты</dt>
+                  <dd>
+                    Учусь на педагогическом направлении. Курсы повышения
+                    квалификации: TEFL, TESOL, Advanced Teaching English
+                    to IELTS Test Takers и другие.
+                    <a href="#certificates">Сертификаты и документы</a>
+                  </dd>
+                </div>
+                <div>
+                  <dt>Специализация</dt>
+                  <dd>
+                    Разговорный английский, грамматика без зубрёжки,
+                    современная лексика, подготовка к разговору
+                    с носителями.
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="teacher teacher--zh reveal">
+            <img class="teacher__photo"
+                 src="assets/images/teacher-chinese-card.webp"
+                 alt="Екатерина (Фанлинь), преподаватель китайского языка"
+                 width="581" height="1093" loading="lazy">
+            <div class="teacher__body">
+              <h3 class="teacher__name">
+                Екатерина <span class="teacher__alt-name" lang="zh">芳琳老师</span>
+              </h3>
+              <p class="teacher__lang teacher__lang--zh">Китайский язык</p>
+
+              <dl class="teacher__facts">
+                <div>
+                  <dt>О себе</dt>
+                  <dd>
+                    Преподаю китайский язык детям от 7 лет, подросткам
+                    и взрослым — с нуля и начального уровня.
+                  </dd>
+                </div>
+                <div>
+                  <dt>Опыт</dt>
+                  <dd>Более 2 лет преподавания.</dd>
+                </div>
+                <div>
+                  <dt>Образование и сертификаты</dt>
+                  <dd>
+                    Педагогическое образование. Подтверждённый уровень HSK 4.
+                    <a href="#certificates">Сертификаты и документы</a>
+                  </dd>
+                </div>
+                <div>
+                  <dt>Специализация</dt>
+                  <dd>
+                    Дети от 7 лет, подростки и взрослые; начинающие с нуля;
+                    коммуникативный подход.
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= СЕРТИФИКАТЫ ================= -->
+    <section class="section" id="certificates" aria-labelledby="certificates-title">
+      <div class="container">
+        <h2 class="section__title" id="certificates-title">Сертификаты и документы</h2>
+        <p class="section__lead">
+          Подтверждения квалификации. Нажмите на документ, чтобы открыть его крупнее.
+        </p>
+
+        <!-- TODO: проверьте подписи — они составлены по самим документам -->
+        <div class="certs">
+
+          <figure class="cert reveal">
+            <button class="cert__btn" type="button"
+                    data-full="assets/images/teacher-english-certificate-01.jpg"
+                    data-caption="TEFL/TESOL · 250 часов (2024)">
+              <img src="assets/images/teacher-english-certificate-01.jpg"
+                   alt="Сертификат TEFL/TESOL на 250 часов, выданный Еве Зисович в 2024 году"
+                   width="990" height="1400" loading="lazy">
+            </button>
+            <figcaption>TEFL/TESOL · 250 часов (2024)</figcaption>
+          </figure>
+
+          <figure class="cert reveal">
+            <button class="cert__btn" type="button"
+                    data-full="assets/images/teacher-english-certificate-02.jpg"
+                    data-caption="Teaching English to IELTS Test Takers · 60 часов, Distinction (2025)">
+              <img src="assets/images/teacher-english-certificate-02.jpg"
+                   alt="Сертификат о 60 часах курса Teaching English to IELTS Test Takers с отличием, 2025 год"
+                   width="990" height="1400" loading="lazy">
+            </button>
+            <figcaption>Teaching English to IELTS Test Takers · 60 часов (2025)</figcaption>
+          </figure>
+
+          <figure class="cert reveal">
+            <button class="cert__btn" type="button"
+                    data-full="assets/images/teacher-chinese-certificate-01.jpg"
+                    data-caption="HSK 4 · 287 из 300 (май 2025)">
+              <img src="assets/images/teacher-chinese-certificate-01.jpg"
+                   alt="Сертификат HSK 4 — результаты Екатерины Игнатовой, 287 баллов из 300"
+                   width="913" height="1280" loading="lazy">
+            </button>
+            <figcaption>HSK 4 · 287 из 300 (2025)</figcaption>
+          </figure>
+
+          <figure class="cert reveal">
+            <button class="cert__btn" type="button"
+                    data-full="assets/images/teacher-chinese-certificate-02.jpg"
+                    data-caption="Летняя школа китайского языка, Циндао (2026)">
+              <img src="assets/images/teacher-chinese-certificate-02.jpg"
+                   alt="Диплом об окончании летней школы китайского языка при Политехническом университете Циндао, 2026 год"
+                   width="1280" height="892" loading="lazy">
+            </button>
+            <figcaption>Летняя школа китайского языка, Циндао (2026)</figcaption>
+          </figure>
+
+        </div>
+        <!-- TODO: по желанию можно замазать номера сертификатов и QR-коды
+             в самих картинках — имена при этом остаются -->
+      </div>
+    </section>
+
+    <!-- ================= КАК ПРОХОДЯТ ЗАНЯТИЯ ================= -->
+    <section class="section section--alt" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <h2 class="section__title" id="how-title">Как проходят занятия</h2>
+        <p class="section__lead">
+          Несколько принципов, на которых строится обучение.
+        </p>
+
+        <div class="steps">
+          <article class="step reveal">
+            <p class="step__num" aria-hidden="true">01</p>
+            <h3 class="step__title">Формат</h3>
+            <p class="step__text">
+              Занятия проходят онлайн на платформе Zoom.
+              Длительность занятия — 60 или 90 минут.
+            </p>
+          </article>
+
+          <article class="step reveal">
+            <p class="step__num" aria-hidden="true">02</p>
+            <h3 class="step__title">Первое занятие — бесплатно</h3>
+            <p class="step__text">
+              Знакомство и определение уровня: 30–40 минут,
+              чтобы подобрать программу под вашу цель.
+            </p>
+            <!-- TODO: подтвердите, что бесплатное первое занятие
+                 действует и на китайском направлении -->
+          </article>
+
+          <article class="step reveal">
+            <p class="step__num" aria-hidden="true">03</p>
+            <h3 class="step__title">Материалы и подход</h3>
+            <p class="step__text">
+              Коммуникативный подход: много говорим с первых занятий.
+              Используем интерактивные материалы — презентации, игры,
+              мультфильмы и видео.
+            </p>
+          </article>
+        </div>
+        <!-- Блок «Домашние задания» пока НЕ добавлен — добавим только
+             после вашего подтверждения (см. README.md, раздел «Как добавить блок»). -->
+      </div>
+    </section>
+
+    <!-- ================= ЗАПИСЬ ================= -->
+    <section class="section" id="zapis" aria-labelledby="zapis-title">
+      <div class="container container--narrow">
+        <h2 class="section__title" id="zapis-title">Запись на занятие</h2>
+        <p class="section__lead">
+          Заявки приходят в наш общий аккаунт — отвечает тот из нас,
+          кто освободился первым. Выберите удобный способ.
+        </p>
+
+        <!-- Вкладки: Telegram / Google Форма -->
+        <div class="tabs" data-tabs>
+          <div class="tabs__bar" role="tablist" aria-label="Способ записи">
+            <button class="tabs__btn" id="tab-tg" type="button" role="tab"
+                    aria-selected="true" aria-controls="panel-tg">
+              Через Telegram
+            </button>
+            <button class="tabs__btn" id="tab-form" type="button" role="tab"
+                    aria-selected="false" aria-controls="panel-form">
+              Через Google Форму
+            </button>
+          </div>
+
+          <!-- ---------- Вариант 1: Telegram ---------- -->
+          <div class="tabs__panel" id="panel-tg" role="tabpanel"
+               aria-labelledby="tab-tg" tabindex="0">
+            <p class="form-hint">
+              Заполните короткую форму — при нажатии кнопки откроется Telegram
+              с готовым сообщением. Останется только нажать «Отправить».
+            </p>
+
+            <form class="form" id="tg-form" novalidate>
+              <div class="form__row">
+                <div class="form__field">
+                  <label for="f-name">Как вас зовут? <em>*</em></label>
+                  <input type="text" id="f-name" name="name" required
+                         autocomplete="name" placeholder="Например: Анна">
+                </div>
+                <div class="form__field">
+                  <label for="f-lang">Какой язык интересует?</label>
+                  <select id="f-lang" name="lang">
+                    <option value="Пока выбираю" selected>Пока выбираю</option>
+                    <option value="Английский">Английский</option>
+                    <option value="Китайский">Китайский</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form__row">
+                <div class="form__field">
+                  <label for="f-goal">Цель обучения</label>
+                  <select id="f-goal" name="goal">
+                    <option value="Разговорная практика" selected>Разговорная практика</option>
+                    <option value="Экзамен (IELTS, HSK и др.)">Экзамен (IELTS, HSK и др.)</option>
+                    <option value="Работа и карьера">Работа и карьера</option>
+                    <option value="Переезд и путешествия">Переезд и путешествия</option>
+                    <option value="Учусь для себя">Учусь для себя</option>
+                  </select>
+                </div>
+                <div class="form__field">
+                  <label for="f-time">Удобное время</label>
+                  <select id="f-time" name="time">
+                    <option value="Утро" selected>Утро</option>
+                    <option value="День">День</option>
+                    <option value="Вечер">Вечер</option>
+                    <option value="Выходные">Выходные</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form__row">
+                <div class="form__field form__field--full">
+                  <label for="f-comment">Комментарий (необязательно)</label>
+                  <textarea id="f-comment" name="comment" rows="3"
+                            placeholder="Уровень языка, пожелания, вопросы…"></textarea>
+                </div>
+              </div>
+
+              <div class="form__field form__field--consent">
+                <input type="checkbox" id="f-consent" name="consent" required>
+                <label for="f-consent">
+                  Согласен(-на) на обработку персональных данных согласно
+                  <a href="privacy.html">политике конфиденциальности</a>. <em>*</em>
+                </label>
+              </div>
+
+              <button class="btn btn--primary btn--lg form__submit" type="submit">
+                Отправить заявку в Telegram
+              </button>
+
+              <!-- Сюда скрипт выведет готовое сообщение и ссылку -->
+              <div class="form__result" id="tg-result" hidden>
+                <p class="form__result-title">Заявка готова! Проверьте текст:</p>
+                <textarea id="tg-result-text" rows="6" readonly aria-label="Текст заявки"></textarea>
+                <div class="form__result-actions">
+                  <a class="btn btn--primary" id="tg-result-open" href="#" target="_blank"
+                     rel="noopener">Открыть Telegram</a>
+                  <button class="btn btn--ghost" type="button" id="tg-result-copy">
+                    Скопировать текст
+                  </button>
+                </div>
+                <p class="form__note">
+                  Если Telegram не открылся — скопируйте текст и отправьте его
+                  вручную: <a id="tg-direct-link" href="#" target="_blank" rel="noopener">@аккаунт</a>
+                </p>
+              </div>
+
+              <p class="form__error" id="tg-error" role="alert" hidden></p>
+            </form>
+
+            <noscript>
+              <p class="form__note">
+                Чтобы отправить заявку, включите JavaScript в браузере
+                или напишите нам напрямую в Telegram (ссылка в подвале сайта).
+              </p>
+            </noscript>
+          </div>
+
+          <!-- ---------- Вариант 2: Google Форма ---------- -->
+          <div class="tabs__panel" id="panel-form" role="tabpanel"
+               aria-labelledby="tab-form" tabindex="0" hidden>
+            <!-- script.js заменит заглушку встроенной формой -->
+            <div class="form-placeholder" id="gf-placeholder">
+              <h3>Загрузка формы…</h3>
+              <p>
+                Если форма не появилась,
+                <a href="https://forms.gle/EexAkYcPDcb11wEh6" target="_blank"
+                   rel="noopener">откройте её в новой вкладке</a>.
+              </p>
+            </div>          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section section--alt" id="faq" aria-labelledby="faq-title">
+      <div class="container container--narrow">
+        <h2 class="section__title" id="faq-title">Частые вопросы</h2>
+
+        <details class="faq">
+          <summary>Как проходит первое занятие?</summary>
+          <p>
+            Это занятие-знакомство: определяем ваш уровень, обсуждаем цели
+            и составляем план. Оно длится 30–40 минут и проводится бесплатно.
+            <!-- TODO: подтвердите, что бесплатное занятие действует
+                 и на китайском направлении -->
+          </p>
+        </details>
+
+        <details class="faq">
+          <summary>Занятия проходят онлайн или офлайн?</summary>
+          <p>
+            Онлайн, на платформе Zoom. Длительность занятия — 60 или 90 минут.
+          </p>
+        </details>
+
+        <details class="faq">
+          <summary>Сколько стоит занятие?</summary>
+          <p>
+            60 минут — 2000 ₽, 90 минут — 2500 ₽.
+            Также действуют абонементы — условия уточняйте у репетиторов.
+          </p>
+        </details>
+
+        <details class="faq">
+          <summary>Как записаться?</summary>
+          <p>
+            Через форму выше: заявка приходит в наш общий аккаунт в Telegram,
+            и мы договариваемся о времени.
+          </p>
+        </details>
+
+        <details class="faq">
+          <summary>С какого возраста можно заниматься?</summary>
+          <p>
+            Английский язык — с 16 лет. Китайский язык — с 7 лет.
+          </p>
+        </details>
+
+        <details class="faq">
+          <summary>Нужны ли мне свои учебные материалы?</summary>
+          <p>
+            Нет, мы используем интерактивные материалы: презентации, игры,
+            мультфильмы и видео. Устанавливать ученику ничего не нужно.
+          </p>
+        </details>
+
+        <details class="faq">
+          <summary>Можно ли перенести или отменить занятие?</summary>
+          <p>
+            Если до занятия больше 5 часов — отмена или перенос бесплатны.
+            Если меньше 5 часов — занятие оплачивается в размере 50% стоимости.
+          </p>
+        </details>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= ПОДВАЛ ================= -->
+  <footer class="footer">
+    <div class="container footer__grid">
+
+      <div class="footer__col">
+        <a class="logo logo--footer" href="#top">
+          <span class="logo__mark" aria-hidden="true"></span>
+          <span class="logo__text">The Language Pair</span>
+        </a>
+        <p class="footer__text">
+          Уроки английского и китайского языка от двух преподавателей.
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Запись</h3>
+        <ul class="footer__list">
+          <li>
+            <a href="https://t.me/pawuchiieva" target="_blank" rel="noopener">
+              Telegram — @pawuchiieva
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Разделы</h3>
+        <ul class="footer__list">
+          <li><a href="#directions">Направления</a></li>
+          <li><a href="#teachers">Преподаватели</a></li>
+          <li><a href="#certificates">Сертификаты</a></li>
+          <li><a href="#zapis">Запись</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="container footer__bottom">
+      <p>
+        © <span id="year">2026</span> The Language Pair
+      </p>
+      <a href="privacy.html">Политика обработки персональных данных</a>
+    </div>
+  </footer>
+
+  <!-- ================= ЛАЙТБОКС СЕРТИФИКАТОВ ================= -->
+  <dialog class="cert-dialog" id="cert-dialog" aria-labelledby="cert-dialog-caption">
+    <img id="cert-dialog-img" src="" alt="">
+    <p id="cert-dialog-caption"></p>
+    <button class="cert-dialog__close" id="cert-dialog-close"
+            type="button" aria-label="Закрыть просмотр">×</button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>

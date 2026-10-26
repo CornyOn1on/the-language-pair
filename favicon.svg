@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Знак: два круга = два преподавателя, один проект -->
+  <rect width="64" height="64" rx="14" fill="#FAF6EF"/>
+  <circle cx="26" cy="32" r="14" fill="#B5502F" fill-opacity="0.92"/>
+  <circle cx="38" cy="32" r="14" fill="#256D50" fill-opacity="0.88"/>
+</svg>
